@@ -10,22 +10,24 @@ import {
 const MegaMenu = () => {
   return (
     <div className="header__megamenu">
+      <div className="header__megamenu__links">
       <a href="">
-        <AiOutlineSearch />
-        Search
+        <AiOutlineSearch className="header__megamenu__logo"/>
+        <h2>Search</h2>
       </a>
       <a href="">
-        <AiOutlineFolderOpen />
-        Categories
+        <AiOutlineFolderOpen className="header__megamenu__logo"/>
+        <h2>Categories</h2>
       </a>
       <a href="">
-        <AiOutlineStar />
-        Stars
+        <AiOutlineStar className="header__megamenu__logo"/>
+        <h2>Stars</h2>
       </a>
       <a href="">
-        <AiOutlineUser />
-        Login
+        <AiOutlineUser className="header__megamenu__logo"/>
+        <h2>Login</h2>
       </a>
+      </div>
     </div>
   );
 };
