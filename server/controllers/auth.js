@@ -27,12 +27,14 @@ export const signin = async (req, res, next) => {
     if (!isCorrect) return next(createError(400, "Wrong Credentials!"));
 
     const token = jwt.sign({ id: user._id }, process.env.JWT);
+    const { password, ...others } = user._doc;
+
     res
       .cookie("access_token", token, {
         httpOnly: true,
       })
       .status(200)
-      .json(user);
+      .json(others);
   } catch (err) {
     next(createError(404, "not found sorry!"));
   }
