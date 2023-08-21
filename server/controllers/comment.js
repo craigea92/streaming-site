@@ -1,4 +1,4 @@
-import { createError } from "../error";
+import { createError } from "../error.js";
 import Comment from "../models/Comment.js";
 import Video from "../models/Video.js";
 
@@ -29,6 +29,8 @@ export const deleteComment = async (req, res, next) => {
 
 export const getComments = async (req, res, next) => {
   try {
+    const comments = await Comment.find({ videoId: req.params.videoId });
+    res.status(200).json(comments);
   } catch (err) {
     next(err);
   }
