@@ -24,3 +24,6 @@ npm start
 ```
 
 ## Screenshots
+
+## Styled Components vs CSS
+With styled components, the styles are defined directly in the JavaScript code, while with CSS, the styles are defined in a separate file. In conclusion, both styled components and CSS have their own advantages and disadvantages when it comes to styling React applications.
