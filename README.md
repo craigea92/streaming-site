@@ -27,3 +27,6 @@ npm start
 
 ## Styled Components vs CSS
 With styled components, the styles are defined directly in the JavaScript code, while with CSS, the styles are defined in a separate file. In conclusion, both styled components and CSS have their own advantages and disadvantages when it comes to styling React applications.
+
+## Why use Redux Toolkit?
+Redux Toolkit makes it easier to write good Redux applications and speeds up development, by baking in our recommended best practices, providing good default behaviors, catching mistakes, and allowing you to write simpler code.
