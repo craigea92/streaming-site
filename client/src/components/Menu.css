@@ -1,0 +1,71 @@
+/* Container */
+.Container {
+  flex: 1;
+  background-color: white;
+  height: 100vh;
+  color: black;
+  font-size: 14px;
+  position: sticky;
+  top: 0;
+}
+
+/* Wrapper */
+.Wrapper {
+  padding: 18px 26px;
+}
+
+/* Logo */
+.Logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+/* Img */
+.Img {
+  height: 25px;
+}
+
+/* Item */
+.Item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  padding: 7.5px 0px;
+}
+
+.Item:hover {
+  background-color: #f5f5f5;
+}
+
+/* Hr */
+.Hr {
+  margin: 15px 0px;
+  border: 0.5px solid #f5f5f5;
+}
+
+/* Button */
+.Button {
+  padding: 5px 15px;
+  background-color: transparent;
+  border: 1px solid #3ea6ff;
+  color: #3ea6ff;
+  border-radius: 3px;
+  font-weight: 500;
+  margin-top: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Title */
+.Title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #aaaaaa;
+  margin-bottom: 20px;
+}
