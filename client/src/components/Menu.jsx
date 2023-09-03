@@ -1,6 +1,6 @@
 import React from "react";
-import styled from "styled-components";
-import LamaTube from "../img/logo.png";
+import "./Menu.css";
+import CraigTube from "../img/logo.png";
 import HomeIcon from "@mui/icons-material/Home";
 import ExploreOutlinedIcon from "@mui/icons-material/ExploreOutlined";
 import SubscriptionsOutlinedIcon from "@mui/icons-material/SubscriptionsOutlined";
@@ -19,162 +19,99 @@ import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
 import SettingsBrightnessOutlinedIcon from "@mui/icons-material/SettingsBrightnessOutlined";
 import { Link } from "react-router-dom";
 
-const Container = styled.div`
-  flex: 1;
-  background-color: ${({ theme }) => theme.bgLighter};
-  height: 100vh;
-  color: ${({ theme }) => theme.text};
-  font-size: 14px;
-  position: sticky;
-  top: 0;
-`;
-const Wrapper = styled.div`
-  padding: 18px 26px;
-`;
-const Logo = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-weight: bold;
-  margin-bottom: 25px;
-`;
-
-const Img = styled.img`
-  height: 25px;
-`;
-
-const Item = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  cursor: pointer;
-  padding: 7.5px 0px;
-
-  &:hover {
-    background-color: ${({ theme }) => theme.soft};
-  }
-`;
-
-const Hr = styled.hr`
-  margin: 15px 0px;
-  border: 0.5px solid ${({ theme }) => theme.soft};
-`;
-
-const Login = styled.div``;
-const Button = styled.button`
-  padding: 5px 15px;
-  background-color: transparent;
-  border: 1px solid #3ea6ff;
-  color: #3ea6ff;
-  border-radius: 3px;
-  font-weight: 500;
-  margin-top: 10px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-`;
-
-const Title = styled.h2`
-  font-size: 14px;
-  font-weight: 500;
-  color: #aaaaaa;
-  margin-bottom: 20px;
-`;
-
 const Menu = ({ darkMode, setDarkMode }) => {
   return (
-    <Container>
-      <Wrapper>
+    <div className="Container">
+      <div className="Wrapper">
         <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
-          <Logo>
-            <Img src={LamaTube} />
+          <div className="Logo">
+            <img src={CraigTube} alt="CraigTube" />
             CraigTube
-          </Logo>
+          </div>
         </Link>
-        <Item>
+        <div className="Item">
           <HomeIcon />
           Home
-        </Item>
+        </div>
         <Link to="trends" style={{ textDecoration: "none", color: "inherit" }}>
-          <Item>
+          <div className="Item">
             <ExploreOutlinedIcon />
             Explore
-          </Item>
+          </div>
         </Link>
         <Link
           to="subscriptions"
           style={{ textDecoration: "none", color: "inherit" }}
         >
-          <Item>
+          <div className="Item">
             <SubscriptionsOutlinedIcon />
             Subscriptions
-          </Item>
+          </div>
         </Link>
-        <Hr />
-        <Item>
+        <div className="Hr" />
+        <div className="Item">
           <VideoLibraryOutlinedIcon />
           Library
-        </Item>
-        <Item>
+        </div>
+        <div className="Item">
           <HistoryOutlinedIcon />
           History
-        </Item>
-        <Hr />
-        <Login>
+        </div>
+        <header />
+        <div className="Login">
           Sign in to like videos, comment, and subscribe.
           <Link to="signin" style={{ textDecoration: "none" }}>
-            <Button>
+            <div className="Button">
               <AccountCircleOutlinedIcon />
               SIGN IN
-            </Button>
+            </div>
           </Link>
-        </Login>
-        <Hr />
-        <Title>BEST OF LAMATUBE</Title>
-        <Item>
+        </div>
+        <div className="Hr" />
+        <div className="Title">BEST OF CRAIGTUBE</div>
+        <div className="Item">
           <LibraryMusicOutlinedIcon />
           Music
-        </Item>
-        <Item>
+        </div>
+        <div className="Item">
           <SportsBasketballOutlinedIcon />
           Sports
-        </Item>
-        <Item>
+        </div>
+        <div className="Item">
           <SportsEsportsOutlinedIcon />
           Gaming
-        </Item>
-        <Item>
+        </div>
+        <div className="Item">
           <MovieOutlinedIcon />
           Movies
-        </Item>
-        <Item>
+        </div>
+        <div className="Item">
           <ArticleOutlinedIcon />
           News
-        </Item>
-        <Item>
+        </div>
+        <div className="Item">
           <LiveTvOutlinedIcon />
           Live
-        </Item>
-        <Hr />
-        <Item>
+        </div>
+        <div className="Hr" />
+        <div className="Item">
           <SettingsOutlinedIcon />
           Settings
-        </Item>
-        <Item>
+        </div>
+        <div className="Item">
           <FlagOutlinedIcon />
           Report
-        </Item>
-        <Item>
+        </div>
+        <div className="Item">
           <HelpOutlineOutlinedIcon />
           Help
-        </Item>
-        <Item onClick={() => setDarkMode(!darkMode)}>
+        </div>
+        <div className="Item" onClick={() => setDarkMode(!darkMode)}>
           <SettingsBrightnessOutlinedIcon />
           {darkMode ? "Light" : "Dark"} Mode
-        </Item>
-      </Wrapper>
-    </Container>
+        </div>
+      </div>
+    </div>
   );
 };
 
