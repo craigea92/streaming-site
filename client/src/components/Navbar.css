@@ -2,7 +2,7 @@
 .Container {
   position: sticky;
   top: 0;
-  background-color: ;
+  background-color: #202020;
   height: 56px;
 }
 
@@ -36,7 +36,7 @@
   border: none;
   background-color: transparent;
   outline: none;
-  color: ;
+  color: white;
 }
 
 /* Button */
@@ -52,8 +52,3 @@
   align-items: center;
   gap: 5px;
 }
-
-
-
-
-
