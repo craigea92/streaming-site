@@ -1,0 +1,12 @@
+.Container {
+  display: flex;
+}
+
+.Main {
+  flex: 7;
+  background-color: #181818;
+}
+
+.Wrapper {
+  padding: 22px 96px;
+}
