@@ -14,7 +14,7 @@ const SignIn = () => {
     } catch (err) {}
   };
   return (
-    <div className="Container">
+    <div className="SignIn_Container">
       <div className="Wrapper">
         <div className="Title">Sign in</div>
         <div className="SubTitle">to continue to CraigTube</div>

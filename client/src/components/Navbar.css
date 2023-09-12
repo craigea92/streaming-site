@@ -1,11 +1,11 @@
-.Container {
+.Navbar_Container {
   position: sticky;
   top: 0;
   background-color: #202020;
   height: 56px;
 }
 
-.Wrapper {
+.Navbar_Wrapper {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -14,7 +14,7 @@
   position: relative;
 }
 
-.Search {
+.Navbar_Search {
   width: 40%;
   position: absolute;
   left: 0;
@@ -28,14 +28,14 @@
   border-radius: 3px;
 }
 
-.Input {
+.Navbar_Input {
   border: none;
   background-color: transparent;
   outline: none;
   color: white;
 }
 
-.Button {
+.Navbar_Button {
   padding: 5px 15px;
   background-color: transparent;
   border: 1px solid #3ea6ff;

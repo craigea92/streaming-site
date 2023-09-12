@@ -21,7 +21,7 @@ import { Link } from "react-router-dom";
 
 const Menu = ({ darkMode, setDarkMode }) => {
   return (
-    <div className="Container">
+    <div className="Menu_Container">
       <div className="Wrapper">
         <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
           <div className="Logo">
