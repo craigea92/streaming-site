@@ -7,7 +7,7 @@
   color: white;
 }
 
-.Wrapper {
+.SignIn_Wrapper {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -17,16 +17,16 @@
   gap: 10px;
 }
 
-.Title {
+.SignIn_Title {
   font-size: 24px;
 }
 
-.SubTitle {
+.SignIn_SubTitle {
   font-size: 20px;
   font-weight: 300;
 }
 
-.Input {
+.SignIn_Input {
   border: 1px solid #373737;
   border-radius: 3px;
   padding: 10px;
@@ -35,7 +35,7 @@
   color: white;
 }
 
-.Button {
+.SignIn_Button {
   border-radius: 3px;
   border: none;
   padding: 10px 20px;
@@ -45,17 +45,17 @@
   color: #aaaaaa;
 }
 
-.More {
+.SignIn_More {
   display: flex;
   margin-top: 10px;
   font-size: 12px;
   color: #aaaaaa;
 }
 
-.Links {
+.SignIn_Links {
   margin-left: 50px;
 }
 
-.Link {
+.SignIn_Link {
   margin-left: 30px;
 }

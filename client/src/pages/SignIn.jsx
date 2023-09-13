@@ -15,43 +15,47 @@ const SignIn = () => {
   };
   return (
     <div className="SignIn_Container">
-      <div className="Wrapper">
-        <div className="Title">Sign in</div>
-        <div className="SubTitle">to continue to CraigTube</div>
-        <div
-          className="Input"
+      <div className="SignIn_Wrapper">
+        <div className="SignIn_Title">Sign in</div>
+        <div className="SignIn_SubTitle">to continue to CraigTube</div>
+        <input
+          className="SignIn_Input"
           placeholder="username"
           onChange={(e) => setName(e.target.value)}
         />
-        <div className="Input" type="password" placeholder="password" />
-        <div className="Button" onClick={handleLogin}>
+        <input
+          className="SignIn_Input"
+          type="password"
+          placeholder="password"
+        />
+        <div className="SignIn_Button" onClick={handleLogin}>
           Sign in
         </div>
-        <div className="Title">or</div>
-        <div
-          className="Input"
+        <div className="SignIn_Title">or</div>
+        <input
+          className="SignIn_Input"
           placeholder="username"
           onChange={(e) => setName(e.target.value)}
         />
-        <div
-          className="Input"
+        <input
+          className="SignIn_Input"
           placeholder="email"
           onChange={(e) => setEmail(e.target.value)}
         />
-        <div
-          className="Input"
+        <input
+          className="SignIn_Input"
           type="password"
           placeholder="password"
           onChange={(e) => setPassword(e.target.value)}
         />
-        <div className="Button">Sign up</div>
+        <div className="SignIn_Button">Sign up</div>
       </div>
-      <div className="More">
+      <div className="SignIn_More">
         English(USA)
-        <div className="Links">
-          <div className="Link">Help</div>
-          <div className="Link">Privacy</div>
-          <div className="Link">Terms</div>
+        <div className="SignIn_Links">
+          <div className="SignIn_Link">Help</div>
+          <div className="SignIn_Link">Privacy</div>
+          <div className="SignIn_Link">Terms</div>
         </div>
       </div>
     </div>
