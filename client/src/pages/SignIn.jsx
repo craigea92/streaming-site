@@ -51,7 +51,7 @@ const SignIn = () => {
         <div className="SignIn_Button">Sign up</div>
       </div>
       <div className="SignIn_More">
-        English(USA)
+        English
         <div className="SignIn_Links">
           <div className="SignIn_Link">Help</div>
           <div className="SignIn_Link">Privacy</div>
