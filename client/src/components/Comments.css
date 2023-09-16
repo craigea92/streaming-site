@@ -1,0 +1,22 @@
+
+.Comments_NewComment {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+} 
+
+.Comments_Avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.Comments_Input {
+  border: none;
+  border-bottom: 1px solid #373737;
+  color: white;
+  background-color: transparent;
+  outline: none;
+  padding: 5px;
+  width: 100%;
+}
